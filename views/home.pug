@@ -1,0 +1,41 @@
+extends base.pug 
+
+block script 
+    script(src="/static/index.js")
+block style 
+    style 
+       include ../static/style.css 
+block content
+    section#introsection
+        div Welcome to RRR Dance Accademy   
+         
+    section#missionsection
+        h2  Our mission 
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i1.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i2.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i3.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+    section#sponsorsection
+        h3 Our sponsor 
+        div#sponsor 
+            img(src="/static/logo2.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo3.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo4.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo5.png", alt="sponsore", Class="spimage")

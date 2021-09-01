@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+          div#logo 
+              img(src="/static/logo.png")
+              | RDA
+          li #[a(href="/") Home ]
+          li #[a(href="/") About ]
+          li #[a(href="/") Services]
+          li #[a(href="/") Class info]
+          li #[a(href="/") Contact us ]
+
+    section#introsection
+        div Welcome to RRR Dance Accademy   
+         
+    section#missionsection
+        h2  Our mission 
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i1.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i2.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+        div.card 
+          h3 this is our card 
+          div.card-box 
+            div.card-img 
+              img(src="/static/i3.jpg")
+            div.card-contant 
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint omnis sequi voluptate officiis!
+    section#sponsorsection
+        h3 Our sponsor 
+        div#sponsor 
+            img(src="/static/logo2.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo3.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo4.png", alt="sponsore", Class="spimage")
+            img(src="/static/logo5.png", alt="sponsore", Class="spimage")
+    footer#footer
+        | Copyright 2021 RRR DanceAcadamy.com All right | reserved
+    script
+      include ../static/index.js
+
